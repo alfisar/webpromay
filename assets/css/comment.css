@@ -1,0 +1,26 @@
+textarea{
+    resize: none;
+    height: 10em;
+}
+
+.btn-cmt{
+    background-color: #282828;
+    color: white;
+}
+
+.btn-cmt:hover{
+    background-color: #eab245;
+}
+
+.line-comment{
+    border-bottom: 2px solid #cecece;
+    height: 10vh;
+}
+
+.otr-cmt{
+    height: 10em;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    margin-bottom: 3em;
+    
+}

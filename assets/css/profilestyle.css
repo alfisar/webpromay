@@ -1,0 +1,89 @@
+.upper-text{
+	margin-top: 30%;
+}
+
+#accMenu{
+	margin-top: 10%;
+	text-decoration: none;
+	margin-bottom: 30%;
+}
+
+    .no-space {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .row-header {
+        color: #282828;
+        height: 5em;
+        width: 100%;
+        z-index: 2;
+        position: fixed;
+        background-color: #ffffff;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 2em;
+    }
+
+    .nav a {
+        font-size: 14pt;
+        color: #707070;
+    }
+
+    .nav a:hover {
+        color: #282828;
+    }
+
+    .navbar-brand {
+        color: #707070;
+        font-size: 22pt;
+    }
+
+    .navbar-brand:hover {
+        color: #282828;
+        font-size: 22pt;
+    }
+
+    .navbar-right,
+    .navbar-left {
+        z-index: 3;
+    }
+
+    .middlein {
+        position: relative;
+        top: 0.5em;
+    }
+
+    .invisible-div {
+        height: 96vh;
+    }
+
+    footer {
+        background-color: #282828;
+    }
+
+    .for-footer {
+        color: #cecece;
+    }
+
+    .for-footer .nav a {
+        font-size: 12pt;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .for-footer .nav a:hover {
+        color: white;
+    }
+
+    #quantityNum {
+        color: #eab245;
+    }

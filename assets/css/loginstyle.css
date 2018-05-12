@@ -1,0 +1,48 @@
+body { 
+	margin: 0;
+	font-family: Arial;
+}
+
+.top-header {
+	overflow: hidden;
+	background-color: white;
+	padding: 8px 8px;
+}
+
+.top-header a {
+	float: right;
+	color: black;
+	padding: 6px;
+	font-size: 18px; 
+	text-decoration: none;
+	position: -webkit-sticky;
+
+}
+
+.navbar {
+	float: left;
+	text-decoration: none;
+}
+
+.sign-in{
+	text-align: center;
+	margin-top: 10%;
+}
+
+.email-cont{
+	margin-top: 10%;
+}
+
+div.inline { 
+	float:left; 
+}
+
+.btn-in{
+	width: 50%;
+}
+
+.btn-link{
+	
+}
+
+
