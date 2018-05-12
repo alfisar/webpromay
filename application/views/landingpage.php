@@ -11,18 +11,6 @@
               crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/construct.css">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/open-iconic/font/css/open-iconic-bootstrap.min.css">
-        <style>
-            .bottom-bar{
-                border-top: 1px solid #b7b7b7;
-                border-bottom: 1px solid #b7b7b7;
-                height: 9vh;
-            }
-            
-            .bottom-bar p{
-                margin-top: 1em;
-                color: #b7b7b7;
-            }
-        </style>
     </head>
     <body>
         <div class="jumbotron jumbotron-fluid no-space jumbo-header">

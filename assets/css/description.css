@@ -1,190 +1,103 @@
-    /*Header and Footer css*/
+/* descriptionpage css*/
 
-    .no-space {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
+.row-product-showcase {
+    height: 120vh;
+    background-color: red;
+}
 
-    .row-header {
-        color: #282828;
-        height: 5em;
-        width: 100%;
-        z-index: 2;
-        position: fixed;
-        background-color: #ffffff;
-    }
+.product-image {
+    height: 95%;
+    width: auto;
+    margin-left: 5em;
+}
 
-    .navbar-brand {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 0;
-        text-align: center;
-        vertical-align: middle;
-        font-size: 2em;
-    }
+.row-product-cap {
+    margin-top: 8em;
+}
 
-    .nav a {
-        font-size: 14pt;
-        color: #707070;
-    }
+.row-product-quantity {
+    margin-top: 4em;
+    width: 80%;
+    height: auto;
+}
 
-    .nav a:hover {
-        color: #282828;
-    }
+.product-quantity {
+    width: 100%;
+    height: auto;
+}
 
-    .navbar-brand {
-        color: #707070;
-        font-size: 22pt;
-    }
+#btnAddToCart {
+    background-color: #282828;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 0;
+    padding: 12px;
+    margin-top: 8%;
+}
 
-    .navbar-brand:hover {
-        color: #282828;
-        font-size: 22pt;
-    }
+#btnAddToCart:hover {
+    background-color: #eab245;
+}
 
-    .navbar-right,
-    .navbar-left {
-        z-index: 3;
-    }
+#btnAddingProduct {
+    background-color: #eeeeee;
+    font-size: 2em;
+}
 
-    .middlein {
-        position: relative;
-        top: 0.5em;
-    }
+#btnSubtractProduct {
+    background-color: #eeeeee;
+    font-size: 2em;
+}
 
-    .invisible-div {
-        height: 96vh;
-    }
+#quantityProduct {
+    font-size: 2em;
+    margin-top: 15%;
+    color: #eab245;
+}
 
-    footer {
-        background-color: #282828;
-    }
+#productPrice {
+    padding: 0 0 1em 0;
+    color: #eab245;
+}
 
-    .for-footer {
-        color: #cecece;
-    }
+#productCaption {
+    width: 80%;
+}
 
-    .for-footer .nav a {
-        font-size: 12pt;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+.product-description {
+    height: auto;
+    background-color: #ffffff;
+    width: 100%;
+}
 
-    .for-footer .nav a:hover {
-        color: white;
-    }
+.row-product-description {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    height: auto;
+}
 
-    #quantityNum {
-        color: #eab245;
-    }
+#descriptionText {
+    font-size: 1.3em;
+    color: #8f8f8f;
+}
 
-    /* descriptionpage css*/
+.product-identity {
+    height: 10vh;
+    border-top: 2px solid #e7e7e7;
+    border-bottom: 2px solid #e7e7e7;
+    box-sizing: content-box;
+}
 
-    .product-information {
-        margin-top: 5em;
-        background-color: hotpink;
-    }
+.product-identity p {
+    margin-top: 2%;
+    font-size: 1.3em;
+}
 
-    .row-product-showcase {
-        height: 120vh;
-        background-color: #eeeeee;
-    }
+.row-title-recommend {
+    margin: 4% 1% 0 1%;
+}
 
-    .product-image {
-        height: 95%;
-        width: auto;
-        margin-left: 5em;
-    }
-
-    .row-product-cap {
-        margin-top: 8em;
-    }
-
-    .row-product-quantity {
-        margin-top: 4em;
-        width: 80%;
-        height: auto;
-    }
-
-    .product-quantity {
-        width: 100%;
-        height: auto;
-    }
-
-    #btnAddToCart {
-        background-color: #282828;
-        color: #ffffff;
-        width: 100%;
-        border-radius: 0;
-        padding: 12px;
-        margin-top: 8%;
-    }
-
-    #btnAddToCart:hover {
-        background-color: #eab245;
-    }
-
-    #btnAddingProduct {
-        background-color: #eeeeee;
-        font-size: 2em;
-    }
-
-    #btnSubtractProduct {
-        background-color: #eeeeee;
-        font-size: 2em;
-    }
-
-    #quantityProduct {
-        font-size: 2em;
-        margin-top: 15%;
-        color: #eab245;
-    }
-
-    #productPrice {
-        padding: 0 0 1em 0;
-        color: #eab245;
-    }
-
-    #productCaption {
-        width: 80%;
-    }
-
-    .product-description {
-        height: auto;
-        background-color: #ffffff;
-        width: 100%;
-    }
-
-    .row-product-description {
-        width: 100%;
-        margin-top: 2%;
-        margin-bottom: 3%;
-        height: auto;
-    }
-
-    #descriptionText {
-        font-size: 1.3em;
-        color: #8f8f8f;
-    }
-
-    .product-identity {
-        height: 10vh;
-        border-top: 2px solid #e7e7e7;
-        border-bottom: 2px solid #e7e7e7;
-        box-sizing: content-box;
-    }
-
-    .product-identity p {
-        margin-top: 2%;
-        font-size: 1.3em;
-    }
-
-    .row-title-recommend {
-        margin: 4% 1% 0 1%;
-    }
-
-    .row-item-recommend {
-        margin: 2% 1% 8% 1%;
-    }
+.row-item-recommend {
+    margin: 2% 1% 8% 1%;
+}
