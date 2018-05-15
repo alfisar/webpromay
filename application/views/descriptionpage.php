@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
               crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo base_url()?>assets/css/construct.css">
+        <!-- <link rel="stylesheet" href="<?php echo base_url()?>assets/css/description.css"> -->
         <link rel="stylesheet" href="<?php echo base_url()?>assets/css/desc.css">
     </head>
 
@@ -27,7 +28,18 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12">
-                                        <form action="<?php echo base_url()?>index.php/Billing_C/index/<#?php echo $barang->idbarang;?>">
+                                            <!-- <div class="row justify-content-center product-quantity no-space">
+                                                <div class="col-md-4 text-center">
+                                                    <button class="btn" id="btnSubtractProduct">-</button>
+                                                </div>
+                                                <div class="col-md-4 text-center">
+                                                    <p id="quantityProduct" class="no-space">0</p>
+                                                </div>
+                                                <div class="col-md-4 text-center">
+                                                    <button class="btn" id="btnAddingProduct">+</button>
+                                                </div>
+                                            </div> -->
+                                        <form action="<?php echo base_url()?>index.php/Billing_C/index/<?php echo $barang->idbarang;?>">
                                             <div class="row">
                                                 <div class="col-md-12 p-0">
                                                     <button class="btn form-control">Add to Cart</button>
@@ -60,11 +72,86 @@
                     <p class="font-normal-weight text-center comment"><a href="<?php echo site_url('Comment_C/index')?>?idproduk=<?php echo $barang->idbarang?>">See Comments</a></p>
                 </div>
             </div>
-            <div class="row">
-            <!-- product recommend -->
-            
+            <div class="product-recommend">
+        <div class="container-fluid">
+            <div class="row row-title-recommend">
+                <div class="col-md-4">
+                    <h3>Recommended Product</h3>
+                </div>
+            </div>
+            <div class="row row-space">
+                <div class="col-md-12">
+                  <div class="card-deck">
+                    <!-- First Row -->
+                    <div class="card" id="productt1">
+                        <div class="img-view-bg">
+                            <a href="">
+                                <img class="card-img-top img-view" src="">
+                            </a>
+                            <div class="img-mid-btn">
+                                <a href=""><h1><span class="oi oi-magnifying-glass"></span></h1></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 id="card-title" style="width= 100%;"><span class="oi oi-heart" style="float: right"></span> </h4>
+                            <p class="card-text">
+                                <a href=""></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" id="productt2">
+                            <div class="img-view-bg">
+                            <a href="">
+                                <img class="card-img-top img-view" src="">
+                            </a>
+                            <div class="img-mid-btn">
+                                <a href=""><h1><span class="oi oi-magnifying-glass"></span></h1></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 id="card-title" style="width= 100%;"><span class="oi oi-heart" style="float: right"></span> </h4>
+                            <p class="card-text">
+                                <a href=""></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" id="productt3">
+                            <div class="img-view-bg">
+                            <a href="">
+                                <img class="card-img-top img-view" src="">
+                            </a>
+                            <div class="img-mid-btn">
+                                <a href=""><h1><span class="oi oi-magnifying-glass"></span></h1></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 id="card-title" style="width= 100%;"><span class="oi oi-heart" style="float: right"></span> </h4>
+                            <p class="card-text">
+                                <a href=""></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" id="productt4">
+                            <div class="img-view-bg">
+                            <a href="">
+                                <img class="card-img-top img-view" src="">
+                            </a>
+                            <div class="img-mid-btn">
+                                <a href=""><h1><span class="oi oi-magnifying-glass"></span></h1></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 id="card-title" style="width= 100%;"><span class="oi oi-heart" style="float: right"></span> </h4>
+                            <p class="card-text">
+                                <a href=""></a>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
+    </div>
         <!-- end of content -->
 
                 <!--
@@ -100,4 +187,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+<script src="<?php echo base_url()?>assets/js/JavaScript.js"></script>

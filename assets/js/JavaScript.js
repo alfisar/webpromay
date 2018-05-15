@@ -42,12 +42,12 @@ $(document).ready(function(){
                 $("#product" + card + " div a p").append(jd.gambar[i].price);
             }
             if (ceek != true) {
-                if (jd.gambar[i].nama == "Door Bumper") {
-                    $("#productt" + card + " a").attr("href", "<?php echo base_url()?>index.php/c_web/form_kedua");
-                }
-                $("#productt" + card + " img").attr("src", jd.gambar[i].url);
+                $("#productt" + card + " div a").attr("href", "index?idproduk="+jd.gambar[i].id);
+                $("#productt" + card + " div a img").attr("src", jd.gambar[i].url);
+                $("#productt" + card + " div div a").attr("href", "index?idproduk="+jd.gambar[i].id);
                 $("#productt" + card + " div h4").append(jd.gambar[i].nama);
-                $("#productt" + card + " div a p").append(jd.gambar[i].price);
+                $("#productt" + card + " div p a ").attr("href", "index?idproduk="+jd.gambar[i].id);
+                $("#productt" + card + " div p a ").append(jd.gambar[i].price);
                 card++;
                 penampung.push(i);
             }

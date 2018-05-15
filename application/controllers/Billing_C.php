@@ -11,25 +11,30 @@ class Billing_C extends CI_Controller{
             $this->load->library('javascript');
             $this->load->library('javascript/jquery');
     }    
-    public function index($idproduk)
-    {
-        $data = $this->session->userdata('username');
-        $profile = $this->Profile_M->profile($data);
-        $barang = $this->Barang_M->get_barang($idproduk);
-        if($profile){
-            $this->session->set_flashdata('data', 'ada');
-            $data = array(
+    public function index($idproduk){
+        if ($this->session->userdata('username')!==null) {
+            $data = $this->session->userdata('username');
+            $profile = $this->Profile_M->profile($data);
+            $barang = $this->Barang_M->get_barang($idproduk);
+            if($profile){
+                $this->session->set_flashdata('data', 'ada');
+                $data = array(
                     'barang'=>$barang,
                     'profile'=>$profile
                 );
-        }
-        else{
-            $this->session->set_flashdata('data', 'tidak');
-            $data = array(
+            }
+            else{
+                $this->session->set_flashdata('data', 'tidak');
+                $data = array(
                     'barang'=>$barang
                 );
+            }
+            $this->load->view('billingpage1',$data);
         }
-        $this->load->view('billingpage1',$data);
+        else{
+            redirect('Login_C/index');
+        }
+        
     }
     public function pesan()
     {

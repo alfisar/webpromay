@@ -10,15 +10,10 @@ class Comment_M extends CI_Model{
 			return $query->result();
 		}	
 	public function comment($data){
-			if ($this->session->userdata('username')!==null) {
-				$user = $this->session->userdata('username');
-			}
-			else{
-				$user = "Unkown";
-			}
+			
 			$param = array(
 				"idproduk" => $this->session->userdata('comment'),
-				"user" => $user,
+				"user" => $this->session->userdata('username'),
 				"comment" => $data['cmtUser']
 			);
 				$insert = $this->db->insert('comment', $param);

@@ -17,9 +17,14 @@ class Comment_C extends CI_Controller{
 		$this->load->view('commentpage',$data);
     }
     public function comment(){
-        $data = $this->input->post(null,TRUE);
-        $insert = $this->Comment_M->comment($data);
-        redirect('Comment_C/index');
+        if ($this->session->userdata('username')!==null) {
+            $data = $this->input->post(null,TRUE);
+            $insert = $this->Comment_M->comment($data);
+            redirect('Comment_C/index');
+        }
+        else{
+            redirect('Login_C/index');
+        }
     }
 
 }
