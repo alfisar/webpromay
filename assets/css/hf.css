@@ -2,52 +2,55 @@
 
 .navbar{
     background-color: #ffffff;
+    position: relative;
 }
 
 .cart{
-	width: 7vw;
+    width: 7vw;
 }
 
-a{
-	font-size: 1.2em;
-	color: #707070;
+
+nav a{
+    font-size: 1.2em;
+    color: #999999;
 }
 
-a:hover{
-	color: #282828;
+nav a:hover{
+    color: #282828;
 }
 
-.brand{
-	font-size: 2em;
-	color: #707070 !important;
+nav a:focus{
+    color: #282828;
 }
 
-.brand:hover{
-	color: #0b0b0b !important;
+.savoy a{
+    font-size: 2em;
+    color: #595959;
+}
+
+.savoy a:hover{
+    color: #0b0b0b;
 }
 
 #quantityCart{
-	color: darkorange;
+    color: darkorange;
 }
 
 
 /*Footer Css*/
 .for-footer {
-	background-color: #282828;
-}
-
-.for-footer {
-	color: #cecece;
+    background-color: #282828;
 }
 
 .for-footer .nav a {
-	font-size: 12pt;
-	margin-top: 10px;
-	margin-bottom: 10px;
+    font-size: 12pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #cecece;
 }
 
 .for-footer .nav a:hover {
-	color: white;
+    color: white;
 }
 
 /*Small Device*/
@@ -57,9 +60,9 @@ a:hover{
 
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 769px) {
-	.cart{
-		width: auto;
-	}
+    .cart{
+        width: auto;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */

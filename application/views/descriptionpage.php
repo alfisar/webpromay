@@ -7,8 +7,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
               crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo base_url()?>assets/css/construct.css">
-        <!-- <link rel="stylesheet" href="<?php echo base_url()?>assets/css/description.css"> -->
         <link rel="stylesheet" href="<?php echo base_url()?>assets/css/desc.css">
+        <link rel="stylesheet" href="<?php echo base_url()?>assets/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
     </head>
 
     <body>
@@ -28,17 +29,17 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12">
-                                            <!-- <div class="row justify-content-center product-quantity no-space">
-                                                <div class="col-md-4 text-center">
-                                                    <button class="btn" id="btnSubtractProduct">-</button>
-                                                </div>
-                                                <div class="col-md-4 text-center">
-                                                    <p id="quantityProduct" class="no-space">0</p>
-                                                </div>
-                                                <div class="col-md-4 text-center">
-                                                    <button class="btn" id="btnAddingProduct">+</button>
-                                                </div>
-                                            </div> -->
+                                        <!-- <div class="row justify-content-center product-quantity no-space">
+<div class="col-md-4 text-center">
+<button class="btn" id="btnSubtractProduct">-</button>
+</div>
+<div class="col-md-4 text-center">
+<p id="quantityProduct" class="no-space">0</p>
+</div>
+<div class="col-md-4 text-center">
+<button class="btn" id="btnAddingProduct">+</button>
+</div>
+</div> -->
                                         <form action="<?php echo base_url()?>index.php/Billing_C/index/<?php echo $barang->idbarang;?>">
                                             <div class="row">
                                                 <div class="col-md-12 p-0">
@@ -68,20 +69,19 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-sm-10 mt-4 mt-sm-4">
-                    <p class="font-normal-weight text-center comment"><a href="<?php echo site_url('Comment_C/index')?>?idproduk=<?php echo $barang->idbarang?>">See Comments</a></p>
+                <div class="col-sm-10 mt-4 mt-sm-4 comment">
+                    <p class="text-center comp">
+                        <a class="text-center" href="<?php echo site_url('Comment_C/index')?>?idproduk=<?php echo $barang->idbarang?>">See Comments</a>
+                    </p>
                 </div>
             </div>
-            <div class="product-recommend">
-        <div class="container-fluid">
-            <div class="row row-title-recommend">
+            <div class="row mt-4">
                 <div class="col-md-4">
                     <h3>Recommended Product</h3>
                 </div>
             </div>
-            <div class="row row-space">
-                <div class="col-md-12">
-                  <div class="card-deck">
+            <div class="row mt-4">
+                <div class="col-6 col-sm-6 col-md-3 mb-4">
                     <!-- First Row -->
                     <div class="card" id="productt1">
                         <div class="img-view-bg">
@@ -93,14 +93,16 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h4 id="card-title" style="width= 100%;"><span class="oi oi-heart" style="float: right"></span> </h4>
+                            <h4 id="card-title" style="width= 100%;"></h4>
                             <p class="card-text">
                                 <a href=""></a>
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-4">
                     <div class="card" id="productt2">
-                            <div class="img-view-bg">
+                        <div class="img-view-bg">
                             <a href="">
                                 <img class="card-img-top img-view" src="">
                             </a>
@@ -109,14 +111,16 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h4 id="card-title" style="width= 100%;"><span class="oi oi-heart" style="float: right"></span> </h4>
+                            <h4 id="card-title" style="width= 100%;"></h4>
                             <p class="card-text">
                                 <a href=""></a>
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-4">
                     <div class="card" id="productt3">
-                            <div class="img-view-bg">
+                        <div class="img-view-bg">
                             <a href="">
                                 <img class="card-img-top img-view" src="">
                             </a>
@@ -125,14 +129,16 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h4 id="card-title" style="width= 100%;"><span class="oi oi-heart" style="float: right"></span> </h4>
+                            <h4 id="card-title" style="width= 100%;"></h4>
                             <p class="card-text">
                                 <a href=""></a>
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-4">
                     <div class="card" id="productt4">
-                            <div class="img-view-bg">
+                        <div class="img-view-bg">
                             <a href="">
                                 <img class="card-img-top img-view" src="">
                             </a>
@@ -141,20 +147,18 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h4 id="card-title" style="width= 100%;"><span class="oi oi-heart" style="float: right"></span> </h4>
+                            <h4 id="card-title" style="width= 100%;"></h4>
                             <p class="card-text">
                                 <a href=""></a>
                             </p>
                         </div>
                     </div>
-                  </div>
                 </div>
             </div>
         </div>
-    </div>
         <!-- end of content -->
 
-                <!--
+        <!--
 <footer>
 <nav class="navbar for-footer sticky-bottom">
 <ul class="nav">

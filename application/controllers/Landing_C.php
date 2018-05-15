@@ -12,7 +12,8 @@ class Landing_C extends CI_Controller{
         $data = array(
             'barang' => $this->Barang_M->get_data()
         );
-
+        $this->load->view('header');
         $this->load->view('landingpage',$data);
+        $this->load->view('footer');
     }
 }

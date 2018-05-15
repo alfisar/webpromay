@@ -94,10 +94,12 @@
     font-size: 1.3em;
 }
 
-.row-title-recommend {
-    margin: 4% 1% 0 1%;
+.comment a {
+    color: #282828;
+    text-decoration: none;
+    transition: .3s ease;
 }
 
-.row-item-recommend {
-    margin: 2% 1% 8% 1%;
+.comment a:hover {
+    color: #f4c20c;
 }

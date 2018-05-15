@@ -21,6 +21,7 @@ class Profile_C extends CI_Controller{
                 'order'=>$order
             );  
     	}
+        $this->load->view('header');
         $this->load->view('profilepage',$data1);
 	}
 

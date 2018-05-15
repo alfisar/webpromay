@@ -27,6 +27,8 @@
     padding: 0;
 }
 
+/*Jumbotron*/
+
 .jumbo-header {
     background-image: url("../img/header.jpg");
     background-size: cover;
@@ -36,52 +38,22 @@
     overflow: hidden;
 }
 
-.header-caption{
+.jumbo-caption{
     margin-top: 20%;
     margin-left: 5%;
     overflow: hidden;
 }
 
-.header-caption h1{
+.jumbo-caption h1{
     font-size: 7em;
 }
 
-.header-caption p{
+.jumbo-caption p{
     font-size: 3em;
 }
 
-.row-header {
-    color: #282828;
-    height: 5em;
-    width: 100%;
-    position: fixed;
-    background-color: #ffffff;
-}
 
-.nav a {
-    font-size: 14pt;
-    color: #707070;
-}
-
-.nav a:hover {
-    color: #282828;
-}
-
-.navbar-brand {
-    color: #707070;
-    font-size: 22pt;
-}
-
-.navbar-brand:hover {
-    color: #282828;
-    font-size: 22pt;
-}
-
-
-.invisible-div {
-    height: 96vh;
-}
-
+/*footer*/
 footer {
     background-color: #282828;
 }

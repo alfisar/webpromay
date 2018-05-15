@@ -1,6 +1,3 @@
-<?php 
-	// by nim = 1301164550 / amalia dan 1301164036 / alfisar
-	include 'header.php'; ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -10,18 +7,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- Load your CSS Style Here! -->
-    <link href="css/profilestyle.css" rel="stylesheet">
-    <link href="css/construct.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/profile.css');?>" rel="stylesheet">
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/JavaScript.js"></script>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3"></div>
+        <div class="row justify-content-center name-me">
             <div class="col-md-6">
-                <h1><center>Welcome, <?php echo $this->session->userdata('username');?> </center></h1>
+                <h1><center><?php echo $this->session->userdata('username');?> </center></h1>
             </div>
         </div>
         <div>
@@ -303,26 +298,5 @@
             </div>
         </div>
     </div>
-    <footer>
-        <nav class="navbar for-footer">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Order Tracking</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
 </body>
 </html>

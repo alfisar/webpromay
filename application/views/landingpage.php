@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <?php
-    // by nim = 1301164401 / fajar rizqi
-    include 'header.php';
-    ?>
     <head>
-        <title> Card </title>
+        <title>Savoy - Buy everything you need in premium quality </title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
               crossorigin="anonymous">
-        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/construct.css">
-        <link rel="stylesheet" href="<?php echo base_url();?>/assets/open-iconic/font/css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo base_url('/assets/css/construct.css');?>">
+        <link rel="stylesheet" href="<?php echo base_url('/assets/open-iconic/font/css/open-iconic-bootstrap.min.css');?>">
     </head>
     <body>
         <div class="jumbotron jumbotron-fluid no-space jumbo-header">
-            <div class="container-fluid header-caption">
+            <div class="container-fluid jumbo-caption">
                 <h1>Savoy</h1>
                 <p>Buy everything you need in premium quality</p>
             </div>
@@ -40,7 +36,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h4 id="card-title" style="width= 100%;"><?php echo $brg->nama?> <?php echo " "." ";?><span class="oi oi-heart" style="float: right"></span> </h4>
+                            <h4 id="card-title"><?php echo $brg->nama?> <?php echo " "." ";?></h4>
                             <p class="card-text">
                                 <a href="<?php echo site_url('Desc_C/index')?>?idproduk=<?php echo $brg->idbarang?>">   <?php echo "$".$brg->harga.".00"?></a>
                             </p>
@@ -62,28 +58,6 @@
                 </div>
             </div>
         </div>
-
-        <footer>
-            <nav class="navbar for-footer">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Order Tracking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
     </body>
 
 </html>
