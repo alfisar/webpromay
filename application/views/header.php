@@ -13,6 +13,7 @@ by nim = 1301164401 / fajar rizqi
         
         <link rel="stylesheet" href="<?php echo base_url('/assets/css/hf.css')?>">
         <link href="<?php echo base_url('assets/css/login.css')?>" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo base_url()?>assets/css/comment.css">
         
         <link rel="stylesheet" href="<?php echo base_url('/assets/open-iconic/font/css/open-iconic-bootstrap.min.css');?>">
 

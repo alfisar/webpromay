@@ -47,20 +47,16 @@
                     <h3>Description</h3>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus dicta, eveniet sit nostrum temporibus
                         quam. Eaque cumque quos praesentium inventore voluptatibus architecto, atque, soluta, veniam earum
-                        libero dolorum quae Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusamus  </p>
+                        libero dolorum quae Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eligendi unde dignissimos quod incidunt molestiae. Atque quis quidem voluptate repudiandae pariatur ullam repellat autem magnam nostrum deserunt, obcaecati dignissimos assumenda!  </p>
 
+                </div>
+                <div class="col-12 col-sm-10 commentme">
+                    <p><a href="<?php echo site_url('Comment_C/index')?>?idproduk=<?php echo $barang->idbarang?>">See Comments</a></p>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-12 text-center product-code mt-4 mt-sm-4">
                     <p>Product code : <?php echo $barang->idbarang?> </p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-10 mt-4 mt-sm-4 comment">
-                    <p class="text-center comp">
-                        <a class="text-center" href="<?php echo site_url('Comment_C/index')?>?idproduk=<?php echo $barang->idbarang?>">See Comments</a>
-                    </p>
                 </div>
             </div>
             <div class="row mt-4">

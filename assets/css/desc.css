@@ -5,13 +5,13 @@
 }
 
 .product-showcase-r {
-     height: 95vh;
+    height: 95vh;
     width: auto;
     background-color: #eeeeee;
 }
 
 .product-showcase-l {
-     height: 95vh;
+    height: 95vh;
     width: auto;
     background-color: #eeeeee;
 }
@@ -75,6 +75,21 @@
 .product-quantity {
     width: 100%;
     height: auto;
+}
+
+.commentme a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    background: #282828;
+    transition: .2s ease;
+}
+
+.commentme a:hover{
+    background-color: #eab245;
+    color: white;
+    text-decoration: none;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

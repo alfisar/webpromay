@@ -14,7 +14,9 @@ class Comment_C extends CI_Controller{
             'barang'=>$barang,
             'comment'=>$cmt
             );
+        $this->load->view('header');
 		$this->load->view('commentpage',$data);
+        $this->load->view('footer');
     }
     public function comment(){
         if ($this->session->userdata('username')!==null) {

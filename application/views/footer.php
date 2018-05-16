@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="<?php echo base_url('/assets/css/construct.css')?>">
         <link href="<?php echo base_url('assets/css/login.css')?>" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo base_url('/assets/css/hf.css')?>">
+         <link rel="stylesheet" href="<?php echo base_url()?>assets/css/comment.css">
         
     </head>
     <body>

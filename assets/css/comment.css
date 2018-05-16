@@ -3,6 +3,30 @@ textarea{
     height: 10em;
 }
 
+.container-fluid .comment{
+    margin-top: 2em;
+}
+
+hr{
+    border: 2px solid #707070;
+}
+
+.header-comment{
+    background-color: #eeeeee;
+} 
+
+.header-comment img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.h-c-cap{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .btn-cmt{
     background-color: #282828;
     color: white;
@@ -22,5 +46,40 @@ textarea{
     border: 1px solid #cecece;
     border-radius: 4px;
     margin-bottom: 3em;
-    
+
+}
+
+.oi-x {
+    font-size: 0.8em;
+    color: #282828;
+    transition: transform .7s ease;
+}
+
+.oi-x:hover {
+    color: red;
+    transform: rotate(180deg);
+}
+
+.breadcrumb{
+    background-color: white;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+}
+
+@media (max-width: 426px) {
+
+    .container-fluid{
+        margin-top: 0;
+    }
+
+    .header-comment h1,h4{
+        text-align: center;
+    }
+
+    .header-comment h4{
+        padding-bottom: 1em;
+    }
+
 }

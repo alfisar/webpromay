@@ -19,7 +19,7 @@
                 <h1><center><?php echo $this->session->userdata('username');?> </center></h1>
             </div>
         </div>
-        <div class="row invisible">
+        <div class="row">
             <div>
                 <div>
                     <div class="container">
@@ -295,8 +295,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
         </div>
     </div>
 </body>
