@@ -23,6 +23,7 @@ class Profile_C extends CI_Controller{
     	}
         $this->load->view('header');
         $this->load->view('profilepage',$data1);
+        $this->load->view('footer');
 	}
 
 	public function data_user(){

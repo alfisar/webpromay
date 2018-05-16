@@ -19,12 +19,11 @@
                 <h1><center><?php echo $this->session->userdata('username');?> </center></h1>
             </div>
         </div>
-        <div>
+        <div class="row invisible">
             <div>
                 <div>
                     <div class="container">
                         <div class="row">
-                        
                         <?php 
                              if ( $this->session->flashdata('data') == 'tidak') {
             
@@ -296,6 +295,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
         </div>
     </div>
 </body>

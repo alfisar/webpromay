@@ -9,13 +9,16 @@
         <link rel="stylesheet" href="<?php echo base_url('/assets/open-iconic/font/css/open-iconic-bootstrap.min.css');?>">
     </head>
     <body>
-        <div class="jumbotron jumbotron-fluid no-space jumbo-header">
-            <div class="container-fluid jumbo-caption">
-                <h1>Savoy</h1>
-                <p>Buy everything you need in premium quality</p>
+        <div class="container-fluid">
+            <div class="row jumbotron jumbotron-fluid jumbo-header">
+                <div class="col-sm-12">
+                    <div class="header-caption">
+                        <h1>Savoy</h1>
+                        <p>Buy everything you need in premium quality</p>
+                    </div>
+                </div>
             </div>
         </div>
-
         <div class="container-fluid">
             <?php 
             //Melakukan perulangan untuk membuat card

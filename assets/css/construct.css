@@ -1,9 +1,3 @@
-.no-margin {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 .row-space {
     margin: 4% 0;
 }
@@ -32,23 +26,26 @@
 .jumbo-header {
     background-image: url("../img/header.jpg");
     background-size: cover;
-    background-position-y: 80%;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* Create the parallax scrolling effect */
 }
 
-.jumbo-caption{
-    margin-top: 20%;
-    margin-left: 5%;
-    overflow: hidden;
+.header-caption{
+    position: relative;
+    top: 75%;
+    left: 60%;
+    transform: translate(-60%,-50%);
+    padding: 0 0 0 4em;
 }
 
-.jumbo-caption h1{
+.header-caption h1{
     font-size: 7em;
 }
 
-.jumbo-caption p{
+.header-caption p{
     font-size: 3em;
 }
 
@@ -148,23 +145,28 @@ footer {
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     .jumbo-header{
-        background-position-x: 50%;
-
+        background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,0.7)), url("../img/login.jpg") no-repeat;
+        color: white;
+        background-size: cover;
+        background-position: center;
     }
 
     .header-caption{
-        margin-top: 50%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 0 2em;
     }
 
     .header-caption h1{
-        font-size: 3em;
+        font-size: 5em;
         text-align: center;
     }
 
     .header-caption p{
-        padding-right: 4%;
         font-size: 2em;
         text-align: center;
     }

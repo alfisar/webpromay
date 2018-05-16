@@ -17,6 +17,7 @@ if ($this->session->flashdata('alert')=='gagal_login'){
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
         <link href="<?php echo base_url('assets/css/login.css')?>" rel="stylesheet">
+        
     </head>
     <body>
         <!-- Form Area -->
@@ -44,9 +45,9 @@ if ($this->session->flashdata('alert')=='gagal_login'){
                         <input type="password" name="password" class="form-control" placeholder="enter password" required id="pass">
                     </div>
                     <div class"form-group">
-                       <button class="btn btn-in form-control" type="submit" id="submit">
-                           Submit
-                       </button>
+                        <button class="btn btn-in form-control" type="submit" id="submit">
+                            Submit
+                        </button>
                     </div>
                     <p class = "text-center regme mt-5">
                         <a href="<?php echo site_url('Register_C/index') ?>">Dont have an account?</a>
@@ -56,11 +57,3 @@ if ($this->session->flashdata('alert')=='gagal_login'){
         </div>
         </html>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="<?php echo base_url();?>/assets/js/JavaScript.js""></script>

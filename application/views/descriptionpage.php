@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include 'header.php'; ?>
 <html>
     <head>
         <title>Savoy - <?php echo $barang->nama?> </title>
@@ -29,17 +28,6 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12">
-                                        <!-- <div class="row justify-content-center product-quantity no-space">
-<div class="col-md-4 text-center">
-<button class="btn" id="btnSubtractProduct">-</button>
-</div>
-<div class="col-md-4 text-center">
-<p id="quantityProduct" class="no-space">0</p>
-</div>
-<div class="col-md-4 text-center">
-<button class="btn" id="btnAddingProduct">+</button>
-</div>
-</div> -->
                                         <form action="<?php echo base_url()?>index.php/Billing_C/index/<?php echo $barang->idbarang;?>">
                                             <div class="row">
                                                 <div class="col-md-12 p-0">
@@ -156,33 +144,7 @@
                 </div>
             </div>
         </div>
-        <!-- end of content -->
-
-        <!--
-<footer>
-<nav class="navbar for-footer sticky-bottom">
-<ul class="nav">
-<li class="nav-item">
-<a class="nav-link" href="#">About Us</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Blog</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">FAQs</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Order Tracking</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Contact</a>
-</li>
-</ul>
-</nav>
-</footer>
--->
     </body>
-
 </html>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
@@ -191,4 +153,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="<?php echo base_url()?>assets/js/JavaScript.js"></script>

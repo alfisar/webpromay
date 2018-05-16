@@ -1,6 +1,5 @@
 <?php
-// by nim = 1301164036 /alfisar 1301164550 / amalia
-include 'header.php'; ?>
+// by nim = 1301164036 /alfisar 1301164550 / amalia ?>
 <?php
 if ($this->session->flashdata('alert')=='sukses_daftar'){
     echo "<script>alert('Sukses Mendaftar, Silahkan Login');</script>";

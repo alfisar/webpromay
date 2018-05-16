@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 13 Mei 2018 pada 07.29
--- Versi Server: 10.1.28-MariaDB
--- PHP Version: 7.1.11
+-- Generation Time: May 16, 2018 at 03:15 AM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `akun`
+-- Table structure for table `akun`
 --
 
 CREATE TABLE `akun` (
@@ -34,7 +34,7 @@ CREATE TABLE `akun` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `akun`
+-- Dumping data for table `akun`
 --
 
 INSERT INTO `akun` (`email`, `pass`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `akun` (`email`, `pass`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `barang`
+-- Table structure for table `barang`
 --
 
 CREATE TABLE `barang` (
@@ -57,7 +57,7 @@ CREATE TABLE `barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `barang`
+-- Dumping data for table `barang`
 --
 
 INSERT INTO `barang` (`idbarang`, `nama`, `harga`, `deskripsi`) VALUES
@@ -77,7 +77,7 @@ INSERT INTO `barang` (`idbarang`, `nama`, `harga`, `deskripsi`) VALUES
 ('pr-014', 'Press Coffee Maker', 31, 'Lorem ipsum dolor sit amet consectetur'),
 ('pr-015', 'Savana Sunglasses', 19, 'Lorem ipsum dolor sit amet consectetur'),
 ('pr-016', 'Specs Sunglasses', 19, 'Lorem ipsum dolor sit amet consectetur'),
-('pr-017', 'Basketjpg', 13, 'Lorem ipsum dolor sit amet consectetur'),
+('pr-017', 'Rattan Basket', 13, 'Lorem ipsum dolor sit amet consectetur'),
 ('pr-018', 'Glassbottle', 14, 'Lorem ipsum dolor sit amet consectetur'),
 ('pr-019', 'Sachet', 20, 'Lorem ipsum dolor sit amet consectetur'),
 ('pr-020', 'Wood-tray', 23, 'Lorem ipsum dolor sit amet consectetur');
@@ -85,7 +85,7 @@ INSERT INTO `barang` (`idbarang`, `nama`, `harga`, `deskripsi`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `billing`
+-- Table structure for table `billing`
 --
 
 CREATE TABLE `billing` (
@@ -104,7 +104,7 @@ CREATE TABLE `billing` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `billing`
+-- Dumping data for table `billing`
 --
 
 INSERT INTO `billing` (`user`, `first`, `last`, `email`, `province`, `city`, `district`, `address`, `zipcode`, `phone`, `namabarang`, `harga`) VALUES
@@ -121,7 +121,7 @@ INSERT INTO `billing` (`user`, `first`, `last`, `email`, `province`, `city`, `di
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `comment`
+-- Table structure for table `comment`
 --
 
 CREATE TABLE `comment` (
@@ -131,7 +131,7 @@ CREATE TABLE `comment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `comment`
+-- Dumping data for table `comment`
 --
 
 INSERT INTO `comment` (`idproduk`, `user`, `comment`) VALUES
@@ -139,12 +139,14 @@ INSERT INTO `comment` (`idproduk`, `user`, `comment`) VALUES
 ('pr-006', 'alfisar@gmail.com', 'gantungannya bagus banget '),
 ('pr-002', 'Unkown', 'bagus gan barangnya'),
 ('pr-014', 'alfisar@gmail.com', 'lucu tekonya '),
-('pr-013', 'Unkown', 'kualitasnya bagus ini \r\n');
+('pr-013', 'Unkown', 'kualitasnya bagus ini \r\n'),
+('pr-002', 'Anonymous', 'Kualitas produknya sangat bagus dan pengiriman dengan packaging yang aman'),
+('pr-002', 'Unkown', 'wdwd');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `profile`
+-- Table structure for table `profile`
 --
 
 CREATE TABLE `profile` (
@@ -161,7 +163,7 @@ CREATE TABLE `profile` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `profile`
+-- Dumping data for table `profile`
 --
 
 INSERT INTO `profile` (`user`, `fname`, `lname`, `email`, `province`, `city`, `district`, `address`, `zip`, `phone`) VALUES

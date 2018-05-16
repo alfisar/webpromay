@@ -7,6 +7,7 @@ class Login_C extends CI_Controller{
     public function index(){
 		$this->load->view('header');
         $this->load->view('loginpage');
+        $this->load->view('footer');
     }
 	public function cek_login(){
         $data = $this->input->post(null,TRUE);

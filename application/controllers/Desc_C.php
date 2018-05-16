@@ -19,7 +19,9 @@ class Desc_C extends CI_Controller{
 
         $data = array(
             'barang'=>$barang);
+        $this->load->view('header');
         $this->load->view('descriptionpage',$data);
+        $this->load->view('footer');
     }
 
 

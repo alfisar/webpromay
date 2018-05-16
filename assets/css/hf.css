@@ -5,11 +5,6 @@
     position: relative;
 }
 
-.cart{
-    width: 7vw;
-}
-
-
 nav a{
     font-size: 1.2em;
     color: #999999;
@@ -42,14 +37,17 @@ nav a:focus{
     background-color: #282828;
 }
 
-.for-footer .nav a {
-    font-size: 12pt;
+.for-footer a {
     margin-top: 10px;
     margin-bottom: 10px;
     color: #cecece;
 }
 
-.for-footer .nav a:hover {
+.for-footer a:hover {
+    color: white;
+}
+
+.for-footer a:active{
     color: white;
 }
 
