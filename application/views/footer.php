@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="<?php echo base_url('/assets/css/construct.css')?>">
         <link href="<?php echo base_url('assets/css/login.css')?>" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo base_url('/assets/css/hf.css')?>">
-         <link rel="stylesheet" href="<?php echo base_url()?>assets/css/comment.css">
-        
+        <link rel="stylesheet" href="<?php echo base_url()?>assets/css/comment.css">
+
     </head>
     <body>
         <nav class="navbar navbar-expand-md flex-column flex-md-row for-footer text-center">
@@ -30,3 +30,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="<?php echo base_url()?>assets/js/JavaScript.js"></script>
+<script src="<?php echo base_url()?>assets/js/jquery-1.8.3.min.js"></script>
+<script src="<?php echo base_url()?>assets/js/eZoom-3.0.8.min.js"></script>
+<script src="<?php echo base_url()?>assets/js/functs.js"></script>

@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-xs-12 col-sm-12 col-md-6 text-center product-showcase-l">
-                    <img class="img-fluid" src="<?php echo base_url()?>/assets/img/product/<?php echo $barang->nama?>.jpg">
+                    <img class="img-fluid" id="zoomimg" src="<?php echo base_url()?>/assets/img/product/<?php echo $barang->nama?>.jpg" data-zoom-image="<?php echo base_url()?>/assets/img/product/<?php echo $barang->nama?>.jpg" >
                 </div>
                 <div class="col-12 col-xs-12 col-sm-12 col-md-6 product-showcase-r">
                     <div class="row justify-content-center product-detail">
@@ -25,6 +25,7 @@
                             <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis nisi
                                 perspiciatis doloribus temporibus, eligendi ex dignissimos deleniti natus nihil illo
                                 facere asperiores architecto commodi doloremque aliquam placeat omnis quibusdam?</p>
+                                 <h6 class="mt-4">Hover the image to zoom in</h6>
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12">
@@ -50,7 +51,7 @@
                         libero dolorum quae Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eligendi unde dignissimos quod incidunt molestiae. Atque quis quidem voluptate repudiandae pariatur ullam repellat autem magnam nostrum deserunt, obcaecati dignissimos assumenda!  </p>
 
                 </div>
-                <div class="col-12 col-sm-10 commentme">
+                <div class="col-12 col-sm-10 mt-2 commentme">
                     <p><a href="<?php echo site_url('Comment_C/index')?>?idproduk=<?php echo $barang->idbarang?>">See Comments</a></p>
                 </div>
             </div>

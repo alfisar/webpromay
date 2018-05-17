@@ -9,8 +9,6 @@
     <!-- Load your CSS Style Here! -->
     <link href="<?php echo base_url('assets/css/profile.css');?>" rel="stylesheet">
     <!-- Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../js/JavaScript.js"></script>
 </head>
 <body>
     <div class="container-fluid">
