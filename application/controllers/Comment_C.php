@@ -28,5 +28,13 @@ class Comment_C extends CI_Controller{
             redirect('Login_C/index');
         }
     }
+    public function del_cmt(){
+        $delete = $this->Comment_M->del_cmt($this->input->get('comment1', TRUE));
+        if($delete){
+          redirect('Comment_C/index');  
+        }
+//        
+        
+    }
 
 }

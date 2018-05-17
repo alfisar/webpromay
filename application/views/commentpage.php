@@ -58,18 +58,25 @@
             </div>
             <div class="row justify-content-center mt-3">
                 <div class="col-sm-12 col-md-8">
-                    <?php 
-    foreach ($comment as $cmt) {
-        $userme = $cmt->user;
+                    <?php if($comment == null){ ?>
+                        <h2 class="text-center lead mb-5 mt-5">Be the first to comment! </h2>
+                    <?php
+                    }
+                    else {
+                        foreach ($comment as $cmt) {
+                        $userme = $cmt->user;
                     ?>
                     <div class="otr-cmt">
-                        <h4 class="ml-4 mt-4"><?php echo $cmt->user; ?> <?php if ($cmt->user == $uname ){?>
-                            <a href="#"><span class="oi oi-x float-right mr-4"></span></a>
+                        <h4 class="ml-4 mt-4"><?php echo $cmt->user; ?> <?php if ($cmt->user == $uname ){ ?>
+                            <a href="<?php echo site_url('Comment_C/del_cmt')?>?comment1=<?php echo $cmt->comment?>">
+                                <span class="oi oi-x float-right mr-4"></span>
+                            </a>
                             <?php }?></h4>
                         <p class="ml-4 mr-4"><?php echo $cmt->comment; ?></p>
                     </div>
                     <?php 
-    }
+                        }
+                    }
                     ?>
                 </div>
             </div>
